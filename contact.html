@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32"/>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a Portfolio of a Web Developer
+    Kubat Aiupov. It displays the projects and essential skills on the filed of
+    Web Development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kubat Aiupov - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/
+    8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+  <header class="page-header">
+    <!-- Here a logo should be added-->
+    <img class="logo-kubat" src="img/logo-kubat-aiupov.png" alt="Personal logo of Kubat
+    Aiupov, a text logo in uppercase letters that consists of my name."
+    class="page-header__item">
+
+    <nav class="main-navigation page-header__item">
+      <!-- Navigation bar -->
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item
+          navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+      <h1>Contact</h1>
+
+      <div class="container">
+        <div id="my-address">
+          <!-- Contact address -->
+          Kubat Aiupov<br>
+          Krimmerstr. 10<br>
+          63067 Offenbach am Main<br>
+          Deutschland<br>
+        </div>
+        <br>
+
+        <div id="my-contacts">
+          <!-- My mobile phone number -->
+           <a href="tel:+49 1516 4066720">Tel: +49 1516 4066720</a><br>
+          <!-- My Skype address -->
+           <a href="skype:kubat.aiupov">Skype: kubat.aiupov</a><br>
+          <!-- My Email address -->
+          <a href="mailto:kubat.aiupov@gmail.com">Email: kubat.aiupov@gmail.com</a><br>
+        </div>
+        <br>
+
+        <div id="contact-me">
+          <!-- Call-to-action link to mail me -->
+          <a href="mailto:kubat.aiupov@gmail.com">Contact me</a>
+        </div>
+
+        <div class="leave-message">
+          <form action=""  method="post" id ="contact-form">
+            <label class="standart-label" for="contact-email">E-Mail:</label>
+            <input type= "email" id="contact-email" required>
+
+            <label class="standart-label" for="contact-tel">Phone Number </label>
+            <input type="tel" id="contact-tel" required>
+            <!-- THE REGEX PATTERN TO VALIDATE TELEFON
+            NUMBER. USE CAREFULLY IF I WANT TO ACCEPT SOME NUMBERS FROM
+            MULTIPLE COUNTRIES.
+            <input type = "tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" -->
+
+            <label class="standart-label" for="contact-message">Message: </label>
+            <textarea maxlength="240" id="contact-message" required></textarea>
+
+            <input type="submit" value="Send message">
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <footer class="page-footer">
+      <div id="find-me">
+        <p>Find me</p>
+      </div>
+
+      <div class="social-media">
+        <!-- Github logo -->
+        <img src="img/github_icon.svg" alt="Github icon">
+        <!-- Twitter logo -->
+        <img src="img/twitter_icon.svg" alt="Twitter icon">
+        <!-- LinkedIn logo -->
+        <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
+      </div>
+    </footer>
+
+  <script src="js/tota11y.min.js"></script>
+  </body>
+</html>

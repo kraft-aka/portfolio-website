@@ -1,0 +1,271 @@
+:root {
+  --primary-color: #0b62a8;
+  --primary-color-light: #E9F1F7;
+  --primary-color-dark: #E9F1F7;
+  --secondary-color: #e0b354;
+  --color-link: #040a20;
+  --dark-grey: #2b2b2b;
+  --light-grey: #b9b9c4;
+  --color-white: #fff;
+  --font-bold: 700;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--primary-color-light);  /* Color (Alice Blue)*/
+  color: var(--dark-grey);
+  /* Sets the font size to 16px */
+  /*font-variant: small-caps;
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+main{
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-bold);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+}
+
+span {
+  font-weight: var(--font-bold);
+}
+
+svg {
+  position: relative;
+  left: -100px;
+}
+a {
+  color: var(--primary-color);
+}
+
+a:visited {
+  /* visited link */
+  color: var(--color-link);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration:  none;
+}
+
+a:active {
+  /* selected link */
+  color: var(--color-link);
+}
+
+input,texture,select,button {
+  font-family: inherit;
+}
+
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles teh background color, font color, and text decoration(unerline, etc.)
+  of the button */
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius:10px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a
+  color in RGBA format */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s opacity padding;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  padding: 12px;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark-grey);
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+.navigation-list {
+  list-style-type: none;
+  transition: 5s filter background-color color;
+}
+
+.navigation-list__item:hover {
+  filter: grayscale(20%) opacity(0.8);
+  background-color: var(--light-grey);
+  color: var(--primary-color);
+}
+
+.enjoy-doing {
+  list-style-type: none;
+}
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.logo-kubat {
+  width: 150px;
+  height: auto;
+}
+
+.profile__portrait{
+  float: left;
+  max-width: 100%;
+  max-height: auto;
+  width:300px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+/* start grid fallback*/
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+/* end grid fallsback */
+
+@supports (display: grid) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.grid__item {
+  background-color: #e1b5cb;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  transition: 1s all;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+ }
+}
+
+.grid__item:hover {
+  cursor: pointer;
+  background-color: var(--light-grey);
+  color: var(--primary-color);
+}
+
+.cloud-right{
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+.cloud-top {
+  animation: 23s cloud-move-reverse infinite alternate linear;
+}
+
+
+@media all and (max-width: 500px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px){
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
+@keyframes cloud-move {
+  from {
+    transform: translate(400px, 50px);
+  }
+  to {
+    transform: translate(10px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(0px, 40px);
+  }
+  to {
+    transform: translate(300px,40px);
+  }
+}
