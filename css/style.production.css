@@ -5,12 +5,31 @@
 * Browsers: last 4 version
 */
 
+:root {
+  --primary-color: #0b62a8;
+  --primary-color-light: #E9F1F7;
+  --primary-color-dark: #E9F1F7;
+  --secondary-color: #e0b354;
+  --color-link: #040a20;
+  --dark-grey: #2b2b2b;
+  --light-grey: #b9b9c4;
+  --color-white: #fff;
+  --font-bold: 700;
+
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family:'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: #E9F1F7;  /* Color (Alice Blue)*/
-  color: #2b2b2b;
+  background-color: var(--primary-color-light);  /* Color (Alice Blue)*/
+  color: var(--dark-grey);
   /* Sets the font size to 16px */
   /*font-variant: small-caps;
   line-height: 1.6;
@@ -25,21 +44,21 @@ main{
 
 h1 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 span {
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 svg {
@@ -47,12 +66,12 @@ svg {
   left: -100px;
 }
 a {
-  color: #0b62a8;
+  color: var(--primary-color);
 }
 
 a:visited {
   /* visited link */
-  color: #040a20;
+  color: var(--color-link);
 }
 
 a:hover, a:focus {
@@ -62,14 +81,14 @@ a:hover, a:focus {
 
 a:active {
   /* selected link */
-  color: #040a20;
+  color: var(--color-link);
 }
 
 input,texture,select,button {
   font-family: inherit;
 }
 
-.button {
+.button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -77,30 +96,8 @@ input,texture,select,button {
   font-family: inherit;
   /* styles teh background color, font color, and text decoration(unerline, etc.)
   of the button */
-  background-color: #0b62a8;
-  color: #fff;
-  text-decoration: none;
-  /* adds spacing to the button */
-  padding: 10px;
-  border-radius:10px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a
-  color in RGBA format */
-  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.5s opacity padding;
-  -o-transition: 0.5s opacity padding;
-  transition: 0.5s opacity padding;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles teh background color, font color, and text decoration(unerline, etc.)
-  of the button */
-  background-color: #0b62a8;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--color-white);
   text-decoration: none;
   /* adds spacing to the button */
   padding: 10px;
@@ -125,8 +122,8 @@ button:focus,
 }
 
 .button-secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
+  background-color: var(--secondary-color);
+  color: var(--dark-grey);
 }
 
 .navigation-list__item--active {
@@ -144,8 +141,8 @@ button:focus,
 .navigation-list__item:hover {
   -webkit-filter: grayscale(20%) opacity(0.8);
           filter: grayscale(20%) opacity(0.8);
-  background-color: #b9b9c4;
-  color: #0b62a8;
+  background-color: var(--light-grey);
+  color: var(--primary-color);
 }
 
 .enjoy-doing {
@@ -154,6 +151,11 @@ button:focus,
 .navigation-list li{
   display: inline-block;
   margin-left: 15px;
+}
+
+.logo-kubat {
+  width: 150px;
+  height: auto;
 }
 
 .profile__portrait{
@@ -243,8 +245,8 @@ button:focus,
 
 .grid__item:hover {
   cursor: pointer;
-  background-color: #b9b9c4;
-  color: #0b62a8;
+  background-color: var(--light-grey);
+  color: var(--primary-color);
 }
 
 .cloud-right{
@@ -257,10 +259,6 @@ button:focus,
           animation: 23s cloud-move-reverse infinite alternate linear;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
 @media all and (max-width: 500px) {
   .grid{
