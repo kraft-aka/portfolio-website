@@ -97,7 +97,7 @@ input,texture,select,button {
   /* gives the button a bottom border with a width of 2px, a type of solid, and a
   color in RGBA format */
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-  transition: 0.5s opacity padding;
+  transition: 0.5s opacity;
 }
 
 button:hover,
@@ -121,7 +121,7 @@ button:focus,
 }
 .navigation-list {
   list-style-type: none;
-  transition: 5s filter background-color color;
+  transition: all 5s ;
 }
 
 .navigation-list__item:hover {
