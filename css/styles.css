@@ -8,8 +8,6 @@
   --light-grey: #b9b9c4;
   --color-white: #fff;
   --font-bold: 700;
-
-
 }
 
 * {
@@ -17,17 +15,18 @@
 }
 
 body {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: var(--primary-color-light);  /* Color (Alice Blue)*/
+  background-color: var(--primary-color-light);
   color: var(--dark-grey);
-  /* Sets the font size to 16px */
+  /*Sets the font size to 16px */
   /*font-variant: small-caps;
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
 }
-main{
+
+main {
   display: block;
   max-width: 500px;
   margin: 0 auto;
@@ -133,7 +132,8 @@ button:focus,
 .enjoy-doing {
   list-style-type: none;
 }
-.navigation-list li{
+
+.navigation-list li {
   display: inline-block;
   margin-left: 15px;
 }
@@ -180,7 +180,8 @@ button:focus,
   flex-grow: 1;
   text-align: right;
 }
-/* start grid fallback*/
+
+/* start grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -188,13 +189,13 @@ button:focus,
 /* end grid fallsback */
 
 @supports (display: grid) {
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  margin: 0;
-  text-align: center;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+    text-align: center;
+  }
 
 .grid__item {
   background-color: #e1b5cb;
