@@ -182,6 +182,15 @@ button:focus,
   width: 33%; /* end grid fallsback */
 }
 
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+#contact-message {
+  margin-top: 20px;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
