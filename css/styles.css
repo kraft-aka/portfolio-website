@@ -55,6 +55,7 @@ svg {
 
 a {
   color: var(--primary-color);
+  transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
 }
 
 a:visited {
@@ -66,6 +67,8 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
+  color: var(--color-white);
+  box-shadow: inset 200px 0 0 0 var(--primary-color);
 }
 
 a:active {
@@ -92,7 +95,7 @@ button {
   border-radius: 10px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom
   border with a width of 2px, a type of solid, and color in RGBA format */
-  transition: 0.5s opacity;
+  transition: all 0.5s;
 }
 
 button:hover,
@@ -101,7 +104,7 @@ button:focus,
 .button:focus {
   cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
   opacity: 0.8; /* reduces the opacity of the button to 80% */
-  padding: 12px;
+  padding: 8px;
 }
 
 .button-secondary {
@@ -118,10 +121,12 @@ button:focus,
   transition: all 5s;
 }
 
+.Navigation
+
 .navigation-list__item:hover {
   filter: grayscale(20%) opacity(0.8);
   background-color: var(--light-grey);
-  color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 .enjoy-doing {
