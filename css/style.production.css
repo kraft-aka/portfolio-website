@@ -63,6 +63,10 @@ svg {
 
 a {
   color: var(--primary-color);
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
 }
 
 a:visited {
@@ -74,6 +78,9 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
+  color: var(--color-white);
+  -webkit-box-shadow: inset 200px 0 0 0 var(--primary-color);
+  box-shadow: inset 200px 0 0 0 var(--primary-color);
 }
 
 a:active {
@@ -100,9 +107,9 @@ button {
   border-radius: 10px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom
   border with a width of 2px, a type of solid, and color in RGBA format */
-  -webkit-transition: 0.5s opacity;
-  -o-transition: 0.5s opacity;
-  transition: 0.5s opacity;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 button:hover,
@@ -111,7 +118,7 @@ button:focus,
 .button:focus {
   cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
   opacity: 0.8; /* reduces the opacity of the button to 80% */
-  padding: 12px;
+  padding: 8px;
 }
 
 .button-secondary {
@@ -125,16 +132,32 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
-  -webkit-transition: all 5s;
-  -o-transition: all 5s;
-  transition: all 5s;
 }
 
-.navigation-list__item:hover {
-  -webkit-filter: grayscale(20%) opacity(0.8);
-  filter: grayscale(20%) opacity(0.8);
-  background-color: var(--light-grey);
-  color: var(--primary-color);
+.navigation-list__item::before {
+  background-color: var(--primary-color);
+  content: "";
+  inset: 0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.navigation-list__item:hover::before {
+  color: var(--primary-color-light);
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
 }
 
 .enjoy-doing {

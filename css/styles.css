@@ -118,15 +118,22 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
-  transition: all 5s;
 }
 
-.Navigation
+.navigation-list__item::before {
+  background-color: var(--primary-color);
+  content: "";
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
 
-.navigation-list__item:hover {
-  filter: grayscale(20%) opacity(0.8);
-  background-color: var(--light-grey);
+.navigation-list__item:hover::before {
   color: var(--primary-color-light);
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
 .enjoy-doing {
