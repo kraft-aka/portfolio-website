@@ -55,11 +55,8 @@ svg {
 
 a {
   color: var(--primary-color);
-<<<<<<< Updated upstream
   transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
-=======
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
->>>>>>> Stashed changes
 }
 
 a:visited {
@@ -124,7 +121,7 @@ button:focus,
   list-style-type: none;
 }
 
-<<<<<<< Updated upstream
+
 .navigation-list__item::before {
   background-color: var(--primary-color);
   content: "";
@@ -139,13 +136,12 @@ button:focus,
   color: var(--primary-color-light);
   transform: scaleX(1);
   transform-origin: center;
-=======
+}
+
 .navigation-list__item:hover::before {
   /* filter: grayscale(20%) opacity(0.8);
   background-color: var(--light-grey);
   color: var(--color-white); */
-  
->>>>>>> Stashed changes
 }
 
 .enjoy-doing {
