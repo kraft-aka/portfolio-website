@@ -1,9 +1,13 @@
 :root {
-  --primary-color: #0b62a8;
-  --primary-color-light: #e9f1f7;
+  /* --primary-color: #0b62a8; */
+  /* --primary-color-light: #e9f1f7; #fcebd3; */
+  --primary-color: #842a7d;
+  --primary-color-light: #8fd7da;
   --primary-color-dark: #e9f1f7;
   --secondary-color: #e0b354;
-  --color-link: #040a20;
+  /* --color-link: #040a20; */
+  --color-link: #842a7d;
+  --color-font: #842a7d;
   --dark-grey: #2b2b2b;
   --light-grey: #b9b9c4;
   --color-white: #fff;
@@ -19,9 +23,9 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400; /* font-variant: small-caps; line-height: 1.6; */
-  font-size: 16px; /* Sets the font size to 16px  Sets the line-height to 1.6 */
+  font-size: 18px; /* Sets the font size to 16px  Sets the line-height to 1.6 */
   background-color: var(--primary-color-light);
-  color: var(--dark-grey);
+  color: var(--color-font);
   height: 100%;
   width: 100%;
 }
@@ -35,7 +39,7 @@ main {
 
 section {
   display: block;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -47,7 +51,8 @@ form {
 
 h1 {
   font-size: 50px;
-  font-weight: var(--font-normal);
+  font-weight: var(--font-bold);
+  font-style: italic;
 }
 
 h2 {
@@ -94,7 +99,7 @@ a:active {
 
 input,
 select,
-button {
+.button {
   font-family: inherit;
 }
 
@@ -153,10 +158,6 @@ button:focus,
   transform-origin: center;
 }
 
-.enjoy-doing {
-  list-style-type: none;
-}
-
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -183,10 +184,11 @@ button:focus,
   flex-direction: column;
   text-align: center;
   position: static;
+  flex-shrink: 0;
 }
 
 .page-footer img {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .profile {
@@ -208,6 +210,10 @@ button:focus,
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
+}
+
+.grid {
+  padding: 0 50px;
 }
 
 /* start grid fallback */
@@ -292,14 +298,14 @@ button:focus,
   }
 
   .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
   }
 }
 
-.grid__item-link {
-  margin-bottom: 20px;
-  padding: 10px;
+.grid__item-links {
+  /* margin-bottom: 15px; */
+  margin-top: 15px;
 }
 
 .grid__item:hover {
