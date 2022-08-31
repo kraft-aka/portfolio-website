@@ -40,6 +40,11 @@ section {
   text-align: center;
 }
 
+form {
+  max-width: 500px;
+  margin: 15px auto;
+}
+
 h1 {
   font-size: 50px;
   font-weight: var(--font-normal);
@@ -111,7 +116,9 @@ button {
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+#submit-button:hover,
+#submit-button:focus {
   cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
   opacity: 0.8; /* reduces the opacity of the button to 80% */
 }
@@ -224,11 +231,45 @@ button:focus,
 }
 
 #contact-message {
-  margin-top: 20px;
+  margin-top: 0;
+  height: 150px;
+  width: 60%;
+  line-height: 150%;
+  resize: vertical;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  outline: 0;
+}
+
+#submit-button {
+  margin-top: 15px;
+  border: none;
+  display: inline-block;   /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: var(--primary-color); /* styles the background color */
+  color: var(--color-white); /* font color */
+  text-decoration: none;  /* text decoration(unerline, etc.) of the button */
+  padding: 15px 20px; /* adds spacing to the button */
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 #first-intro {
   font-size: 18px;
+}
+
+#contact-email,
+#contact-name {
+  border-radius: 5px;
+  line-height: 2px;
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s;
+  margin-bottom: 15px;
+  outline: 0;
+  width: 60%;
+  padding: 10px;
 }
 
 @supports (display: grid) {

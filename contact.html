@@ -43,17 +43,17 @@
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
             <a href="index.html" role="menuitem" class="navigation-list__item"
-              >Home</a
+              >HOME</a
             >
           </li>
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About Me</a
+              >ABOUT</a
             >
           </li>
           <li role="presentation">
             <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
+              >WORK</a
             >
           </li>
           <li role="presentation">
@@ -61,7 +61,7 @@
               href="contact.html"
               role="menuitem"
               class="navigation-list__item navigation-list__item--active"
-              >Contact</a
+              >CONTACT</a
             >
           </li>
         </ul>
@@ -69,7 +69,7 @@
     </header>
 
     <div class="container">
-      <h1>Contact</h1>
+      <h1>Contact Me</h1>
       <div id="my-address">
         <!-- Contact address -->
         Kubat Aiupov<br />
@@ -85,32 +85,35 @@
         <!-- My Skype address -->
         <a href="skype:kubat.aiupov">Skype: kubat.aiupov</a><br />
         <!-- My Email address -->
-        <a href="mailto:kubat.aiupov@gmail.com">Email: kubat.aiupov@gmail.com</a
-        ><br />
+        <!-- <a href="mailto:kubat.aiupov@gmail.com">Email: kubat.aiupov@gmail.com</a
+        ><br /> -->
       </div>
       <br />
 
       <div id="contact-me">
         <!-- Call-to-action link to mail me -->
-        <a href="mailto:kubat.aiupov@gmail.com">Contact me</a>
+        <a href="mailto:kubat.aiupov@gmail.com"><button type="button" name="button" class="button">Contact me</button></a>
       </div>
 
       <div class="leave-message">
         <form method="post" id="contact-form">
-          <label class="standart-label" for="contact-email">E-Mail:</label>
-          <input type="email" id="contact-email" required />
+          <!-- <label class="standart-label" for="contact-name">Name </label> -->
+          <input type="text" id="contact-name" required placeholder="Name"/>
+          <br />
+          <!-- <label class="standart-label" for="contact-email">E-Mail:</label> -->
+          <input type="email" id="contact-email" required placeholder="E-Mail"/>
+          <br/>
 
-          <label class="standart-label" for="contact-tel">Phone Number </label>
-          <input type="tel" id="contact-tel" required /><br />
           <!-- THE REGEX PATTERN TO VALIDATE TELEFON
             NUMBER. USE CAREFULLY IF I WANT TO ACCEPT SOME NUMBERS FROM
             MULTIPLE COUNTRIES.
             <input type = "tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" -->
 
-          <label class="standart-label" for="contact-message">Message: </label>
-          <textarea maxlength="240" id="contact-message" required></textarea>
+          <!-- <label class="standart-label" for="contact-message">Message: </label> -->
+          <textarea maxlength="240" id="contact-message" required placeholder="Your message"></textarea>
+          <br />
 
-          <input type="submit" value="Send message" />
+          <input type="submit" value="Send message" id="submit-button" />
         </form>
       </div>
     </div>
