@@ -37,7 +37,7 @@ main {
   text-align: center;
 }
 
-main>.button {
+main > .button {
   margin-top: 15px;
 }
 
