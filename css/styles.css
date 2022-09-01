@@ -1,11 +1,15 @@
 :root {
   /* --primary-color: #0b62a8; */
+
   /* --primary-color-light: #e9f1f7; #fcebd3; */
+
   --primary-color: #842a7d;
   --primary-color-light: #8fd7da;
   --primary-color-dark: #e9f1f7;
   --secondary-color: #e0b354;
+
   /* --color-link: #040a20; */
+
   --color-link: #842a7d;
   --color-font: #842a7d;
   --dark-grey: #2b2b2b;
@@ -84,11 +88,8 @@ svg {
 
 a {
   color: var(--primary-color);
-
   transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
-
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
 }
 
 a:visited {
@@ -130,8 +131,9 @@ select,
   text-decoration: none;  /* text decoration(unerline, etc.) of the button */
   padding: 15px 20px; /* adds spacing to the button */
   border-radius: 5px;
+
   /* border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom */
-  /*border with a width of 2px, a type of solid, and color in RGBA format */
+
   transition: all 0.5s;
 }
 
@@ -159,7 +161,6 @@ button:focus,
   font-weight: var(--font-medium);
 }
 
-
 .navigation-list__item::before {
   background-color: var(--primary-color);
   content: "";
@@ -173,13 +174,13 @@ button:focus,
 .navigation-list__item:hover::before {
   color: var(--primary-color-light);
   transform: scaleX(1);
-  transform-origin: center;}
+  transform-origin: center;
+}
 
 .navigation-list__item:hover::before {
   filter: grayscale(20%) opacity(0.8);
   background-color: var(--light-grey);
   color: var(--color-white);
-
 }
 
 .navigation-list li {
