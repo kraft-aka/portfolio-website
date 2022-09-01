@@ -241,9 +241,9 @@ button:focus,
 
 #contact-message {
   margin-top: 0;
-  height: 150px;
+  height: 100px;
   width: 60%;
-  line-height: 150%;
+  line-height: 100%;
   resize: vertical;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
@@ -268,6 +268,10 @@ button:focus,
   font-size: 18px;
 }
 
+#contact-me {
+  margin-top: 15px;
+}
+
 #contact-email,
 #contact-name {
   border-radius: 5px;
@@ -278,7 +282,7 @@ button:focus,
   margin-bottom: 15px;
   outline: 0;
   width: 60%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid {
