@@ -32,9 +32,13 @@ body {
 
 main {
   display: block;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+main>.button {
+  margin-top: 15px;
 }
 
 section {
@@ -57,12 +61,16 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: var(--font-normal);
+  font-weight: var(--font-bold);
 }
 
 h3 {
   font-size: 18px;
   font-weight: var(--font-normal);
+}
+
+p {
+  text-align: justify;
 }
 
 span {
@@ -83,6 +91,11 @@ a:visited {
   /* visited link */
   color: var(--color-link);
 }
+
+/* li {
+  padding: 5px;
+  background-color: inherit;
+} */
 
 li a:hover,
 li a:focus {
@@ -212,16 +225,6 @@ button:focus,
   text-align: right;
 }
 
-.grid {
-  padding: 0 50px;
-}
-
-/* start grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%; /* end grid fallsback */
-}
-
 .tech-icon {
   width: 70px;
   height: auto;
@@ -233,7 +236,7 @@ button:focus,
 }
 
 #about-tech {
-  padding: 100px 50px;
+  padding: 15px 50px;
 }
 
 #contact-message {
@@ -278,6 +281,16 @@ button:focus,
   padding: 10px;
 }
 
+.grid {
+  padding: 0 50px;
+}
+
+/* start grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%; /* end grid fallsback */
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
@@ -305,7 +318,18 @@ button:focus,
 
 .grid__item-links {
   /* margin-bottom: 15px; */
-  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.grid__item-span {
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: var(--font-normal)
+  padding: 10px;
 }
 
 .grid__item:hover {
