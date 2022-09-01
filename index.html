@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32"/>
-    <meta charset="utf-8">
-    <meta name="description" content="This is a Portfolio of a Web Developer
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This is a Portfolio of a Web Developer
     Kubat Aiupov. It displays the projects and essential skills on the filed of
-    Web Development.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    Web Development."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kubat Aiupov - Portfolio</title>
     <!-- Here comes the Normalize File to reset CSS File -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.production.css" />
   </head>
   <body>
-
     <header class="page-header">
       <!-- Here a logo should be added-->
-      <img class="logo-kubat" src="img/logo-kubat-aiupov.png" alt="Personal logo of Kubat Aiupov, a text logo in uppercase letters that consists of my name.">
+      <img
+        class="logo-kubat"
+        src="assets/icon.png"
+        alt="Personal logo of Kubat Aiupov, a text logo in uppercase letters that consists of my name."
+      />
       <nav class="main-navigation page-header__item">
         <!-- Navigation bar -->
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item
-            navigation-list__item--active" target="_self">Home</a>
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              target="_self"
+              >HOME</a
+            >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >ABOUT</a
+            >
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >WORK</a
+            >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >CONTACT</a
+            >
           </li>
         </ul>
       </nav>
@@ -41,33 +72,50 @@
     <div class="profile">
       <div id="photo-kubat-aiupov">
         <!-- Here a photo should be added -->
-        <img src="img/kubat-aiupov.jpg" class="profile__portrait"
-        alt="Portrait of Kubat Aiupov">
+        <img
+          src="img/kubat-aiupov.jpg"
+          class="profile__portrait"
+          alt="Portrait of Kubat Aiupov"
+        />
       </div>
 
-      <h1>Hello World!</h1>
-      <p id="first-intro">My name is Kubat Aiupov. I am a <span>Web</span>
-      Developer from Germany.</p>
+      <h1>Hello World;</h1>
+      <p id="first-intro">
+        My name is <span>Kubat Aiupov</span>.
+        I am a <span>Web</span> Developer from Germany
+        with a background in Architecture and Design. My main focus is
+        developing my development skills.
+      </p>
       <!-- Link to some of my code samples -->
-      <a href="work.html">Check out some of my code</a><br>
-      <br>
-      <button type="button" name="button">Say Hi!</button>
-      <button class="button-secondary" type="button" name="button">
-      Default Button</button>
+      <!-- <a href="work.html">Check out some of my code</a><br> -->
+      <br />
+      <a href="https://github.com/kraft-aka?tab=repositories" target="_blank"
+        ><button type="button" name="button" class="button">
+          Check out some of my code
+        </button></a
+      >
+      <!-- <button class="button-secondary" type="button" name="button">
+      Default Button</button> -->
     </div>
 
     <footer class="page-footer">
       <div id="find-me">
-        <p>Find me</p>
+        <h3>Find me</h3>
       </div>
 
       <div class="social-media">
         <!-- Github logo -->
-        <img src="img/github_icon.svg" alt="Github icon">
+        <a href="https://github.com/kraft-aka?tab=repositories"
+          ><img src="assets/github.svg" alt="Github icon"
+        /></a>
         <!-- Twitter logo -->
-        <img src="img/twitter_icon.svg" alt="Twitter icon">
+        <a href="https://twitter.com/home"
+          ><img src="assets/twitter.svg" alt="Twitter icon"
+        /></a>
         <!-- LinkedIn logo -->
-        <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
+        <a href="https://www.linkedin.com/in/kubat-aiupov-685645163/"
+          ><img src="assets/linkedin-circled.svg" alt="LinkedIn icon"
+        /></a>
       </div>
     </footer>
 
