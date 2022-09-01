@@ -1,10 +1,12 @@
 :root {
   /* --primary-color: #0b62a8; */
+
   /* --primary-color-light: #e9f1f7; #fcebd3; */
   --primary-color: #842a7d;
   --primary-color-light: #8fd7da;
   --primary-color-dark: #e9f1f7;
   --secondary-color: #e0b354;
+
   /* --color-link: #040a20; */
   --color-link: #842a7d;
   --color-font: #842a7d;
@@ -37,7 +39,7 @@ main {
   text-align: center;
 }
 
-main>.button {
+main > .button {
   margin-top: 15px;
 }
 
@@ -126,8 +128,9 @@ select,
   text-decoration: none;  /* text decoration(unerline, etc.) of the button */
   padding: 15px 20px; /* adds spacing to the button */
   border-radius: 5px;
+
   /* border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom */
-  /*border with a width of 2px, a type of solid, and color in RGBA format */
+
   transition: all 0.5s;
 }
 
@@ -332,7 +335,7 @@ button:focus,
 .grid__item-span {
   background: var(--primary-color);
   color: #fff;
-  font-weight: var(--font-normal)
+  font-weight: var(--font-normal);
   padding: 10px;
 }
 
