@@ -296,8 +296,10 @@ button:focus,
 
 /* start grid fallback */
 .grid__item {
-  display: inline-block;
-  width: 33%; /* end grid fallsback */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%; /* end grid fallsback */
 }
 
 @supports (display: grid) {
@@ -339,6 +341,7 @@ button:focus,
   color: #fff;
   font-weight: var(--font-normal);
   padding: 10px;
+  border-radius: 5px;
 }
 
 .grid__item:hover {
