@@ -92,13 +92,7 @@ a {
   -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
   transition: color 0.3s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
   -o-transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out, -webkit-box-shadow 0.9s ease-in-out;
-  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  /* transition: color 0.3s ease-in-out, box-shadow 0.9s ease-in-out, -webkit-box-shadow 0.9s ease-in-out; */
 }
 
 a:visited {
@@ -344,16 +338,7 @@ button:focus,
 
 /* start grid fallback */
 .grid__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: inline-block;
   width: 33%; /* end grid fallsback */
 }
 
@@ -370,10 +355,10 @@ button:focus,
 
   .grid__item {
     background-color: #e1b5cb;
-    padding: 0 15px;
-    margin: 5px;
+    padding: 20px;
     width: auto;
     min-height: auto;
+    margin: 0;
     border-radius: 5px;
     -webkit-transition: 1s all;
     -o-transition: 1s all;
@@ -404,7 +389,7 @@ button:focus,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .grid__item-span {
@@ -412,16 +397,11 @@ button:focus,
   color: #fff;
   font-weight: var(--font-normal);
   padding: 10px;
-  border-radius: 5px;
 }
 
 .grid__item:hover {
   background-color: var(--light-grey);
   color: var(--primary-color);
-}
-
-.grid__item > h2 {
-  padding: 5px;
 }
 
 .cloud-right {
