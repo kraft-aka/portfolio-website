@@ -328,6 +328,7 @@ button:focus,
 }
 
 .grid__item-img {
+  display: block;
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
@@ -359,13 +360,13 @@ button:focus,
   color: var(--primary-color);
 }
 
-.cloud-right {
+/* .cloud-right {
   animation: 20s cloud-move infinite alternate linear;
 }
 
 .cloud-top {
   animation: 23s cloud-move-reverse infinite alternate linear;
-}
+} */
 
 @media all and (max-width: 500px) {
   .grid {
@@ -394,7 +395,7 @@ button:focus,
   }
 }
 
-@keyframes cloud-move {
+/* @keyframes cloud-move {
   from {
     transform: translate(400px, 50px);
   }
@@ -412,4 +413,4 @@ button:focus,
   to {
     transform: translate(300px, 40px);
   }
-}
+} */
