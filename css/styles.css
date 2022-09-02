@@ -312,6 +312,7 @@ button:focus,
   }
 
   .grid__item {
+    display: flex;
     background-color: #e1b5cb;
     padding: 0;
     width: auto;
