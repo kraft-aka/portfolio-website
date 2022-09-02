@@ -329,7 +329,6 @@ button:focus,
 }
 
 .grid__item-img {
-  display: block;
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
@@ -338,11 +337,16 @@ button:focus,
   margin: 15px;
 }
 
+.grid__item > h2 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
 .grid__item-links {
   /* margin-bottom: 15px; */
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-flow: row wrap;
   align-items: flex-end;
   margin-top: 15px;
 }
