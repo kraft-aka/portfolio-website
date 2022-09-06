@@ -247,7 +247,7 @@ button:focus,
 #contact-message {
   margin-top: 0;
   height: 100px;
-  width: 60%;
+  width: 100%;
   line-height: 100%;
   resize: vertical;
   border: 1px solid var(--primary-color);
@@ -286,7 +286,7 @@ button:focus,
   transition: all 0.3s;
   margin-bottom: 15px;
   outline: 0;
-  width: 60%;
+  width: 100%;
   padding: 5px;
 }
 
