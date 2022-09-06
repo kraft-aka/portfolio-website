@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: 400; /* font-variant: small-caps; line-height: 1.6; */
   font-size: 18px; /* Sets the font size to 16px  Sets the line-height to 1.6 */
   background-color: var(--primary-color-light);
