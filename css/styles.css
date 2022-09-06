@@ -207,6 +207,7 @@ button:focus,
 
 .page-footer img {
   padding: 0 5px;
+  width: 50px;
 }
 
 .profile {
@@ -240,8 +241,16 @@ button:focus,
   padding: 10px;
 }
 
+#first-intro p {
+  line-height: 1.6;
+}
+
 #about-tech {
   padding: 15px 50px;
+}
+
+#about-tech img {
+  width: 50px;
 }
 
 #contact-message {
