@@ -78,7 +78,6 @@
         Deutschland<br />
       </div>
 
-
       <div id="my-contacts">
         <!-- My mobile phone number -->
         <!-- <a href="tel:+4915164066720">Tel: +49 1516 4066720</a><br /> -->
@@ -89,20 +88,28 @@
         ><br /> -->
       </div>
 
-
       <div id="contact-me">
         <!-- Call-to-action link to mail me -->
-        <a href="mailto:kubat.aiupov@gmail.com"><button type="button" name="button" class="button">Contact me</button></a>
+        <a href="mailto:kubat.aiupov@gmail.com"
+          ><button type="button" name="button" class="button">
+            Contact me
+          </button></a
+        >
       </div>
 
       <div class="leave-message">
         <form method="post" id="contact-form">
           <!-- <label class="standart-label" for="contact-name">Name </label> -->
-          <input type="text" id="contact-name" required placeholder="Name"/>
+          <input type="text" id="contact-name" required placeholder="Name" />
           <br />
           <!-- <label class="standart-label" for="contact-email">E-Mail:</label> -->
-          <input type="email" id="contact-email" required placeholder="E-Mail"/>
-          <br/>
+          <input
+            type="email"
+            id="contact-email"
+            required
+            placeholder="E-Mail"
+          />
+          <br />
 
           <!-- THE REGEX PATTERN TO VALIDATE TELEFON
             NUMBER. USE CAREFULLY IF I WANT TO ACCEPT SOME NUMBERS FROM
@@ -110,7 +117,12 @@
             <input type = "tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" -->
 
           <!-- <label class="standart-label" for="contact-message">Message: </label> -->
-          <textarea maxlength="240" id="contact-message" required placeholder="Your message"></textarea>
+          <textarea
+            maxlength="240"
+            id="contact-message"
+            required
+            placeholder="Your message"
+          ></textarea>
           <br />
 
           <input type="submit" value="Send message" id="submit-button" />

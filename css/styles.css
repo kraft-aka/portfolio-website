@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   font-weight: 400; /* font-variant: small-caps; line-height: 1.6; */
   font-size: 18px; /* Sets the font size to 16px  Sets the line-height to 1.6 */
   background-color: var(--primary-color-light);
@@ -117,11 +117,11 @@ select,
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  display: inline-block;   /* takes the font from the outer container */
+  display: inline-block; /* takes the font from the outer container */
   font-family: inherit;
   background-color: var(--primary-color); /* styles the background color */
   color: var(--color-white); /* font color */
-  text-decoration: none;  /* text decoration(unerline, etc.) of the button */
+  text-decoration: none; /* text decoration(unerline, etc.) of the button */
   padding: 15px 20px; /* adds spacing to the button */
   border-radius: 5px;
 
@@ -263,11 +263,11 @@ button:focus,
 #submit-button {
   margin-top: 15px;
   border: none;
-  display: inline-block;   /* takes the font from the outer container */
+  display: inline-block; /* takes the font from the outer container */
   font-family: inherit;
   background-color: var(--primary-color); /* styles the background color */
   color: var(--color-white); /* font color */
-  text-decoration: none;  /* text decoration(unerline, etc.) of the button */
+  text-decoration: none; /* text decoration(unerline, etc.) of the button */
   padding: 15px 20px; /* adds spacing to the button */
   border-radius: 5px;
   transition: all 0.5s;
