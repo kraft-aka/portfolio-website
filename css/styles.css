@@ -124,6 +124,7 @@ select,
   text-decoration: none; /* text decoration(unerline, etc.) of the button */
   padding: 15px 20px; /* adds spacing to the button */
   border-radius: 5px;
+  margin-left: 10px;
 
   /* border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom */
 
