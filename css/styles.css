@@ -19,8 +19,10 @@
 
 body {
   font-family: "Anonymous Pro", monospace;
-  font-weight: 400; /* font-variant: small-caps; line-height: 1.6; */
-  font-size: 18px; /* Sets the font size to 16px  Sets the line-height to 1.6 */
+  font-weight: 400;
+  /* font-variant: small-caps; line-height: 1.6; */
+  font-size: 18px;
+  /* Sets the font size to 16px  Sets the line-height to 1.6 */
   background-color: var(--primary-color-light);
   color: var(--color-font);
   height: 100%;
@@ -34,7 +36,7 @@ main {
   text-align: center;
 }
 
-main > .button {
+main>.button {
   margin-top: 15px;
 }
 
@@ -117,12 +119,17 @@ select,
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  display: inline-block; /* takes the font from the outer container */
+  display: inline-block;
+  /* takes the font from the outer container */
   font-family: inherit;
-  background-color: var(--primary-color); /* styles the background color */
-  color: var(--color-white); /* font color */
-  text-decoration: none; /* text decoration(unerline, etc.) of the button */
-  padding: 15px 20px; /* adds spacing to the button */
+  background-color: var(--primary-color);
+  /* styles the background color */
+  color: var(--color-white);
+  /* font color */
+  text-decoration: none;
+  /* text decoration(unerline, etc.) of the button */
+  padding: 15px 20px;
+  /* adds spacing to the button */
   border-radius: 5px;
   margin-left: 10px;
 
@@ -137,8 +144,10 @@ button:focus,
 .button:focus,
 #submit-button:hover,
 #submit-button:focus {
-  cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  cursor: pointer;
+  /* lets the mouse appear as a hand when hovering over the button */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80% */
 }
 
 .navigation-list__item--active {
@@ -264,12 +273,17 @@ button:focus,
 #submit-button {
   margin-top: 15px;
   border: none;
-  display: inline-block; /* takes the font from the outer container */
+  display: inline-block;
+  /* takes the font from the outer container */
   font-family: inherit;
-  background-color: var(--primary-color); /* styles the background color */
-  color: var(--color-white); /* font color */
-  text-decoration: none; /* text decoration(unerline, etc.) of the button */
-  padding: 15px 20px; /* adds spacing to the button */
+  background-color: var(--primary-color);
+  /* styles the background color */
+  color: var(--color-white);
+  /* font color */
+  text-decoration: none;
+  /* text decoration(unerline, etc.) of the button */
+  padding: 15px 20px;
+  /* adds spacing to the button */
   border-radius: 5px;
   transition: all 0.5s;
 }
@@ -308,7 +322,8 @@ button:focus,
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 25%; /* end grid fallsback */
+  width: 25%;
+  /* end grid fallsback */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
 }
 
@@ -346,7 +361,7 @@ button:focus,
   }
 }
 
-.grid__item > p {
+.grid__item>p {
   margin: 15px;
 }
 
@@ -403,45 +418,55 @@ button:focus,
   .grid {
     grid-template-columns: 1fr;
   }
+
   .navigation-list {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
   }
+
   .profile {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
+
   .about-me__text {
     padding: 0 1.5em;
   }
+
   button,
   .button {
     padding: 10px 15px;
   }
+
   .grid__item-description p {
     font-size: 12px;
   }
+
   .profile__portrait {
     width: 200px;
     float: none;
     position: relative;
     left: 20%;
   }
-  #first-intro{
+
+  #first-intro {
     display: block;
     font-size: 16px;
     padding: 0 1em;
   }
+
   .profile h1 {
     text-align: center;
   }
-  .profile .button{
+
+  .profile .button {
     display: block;
     margin-left: 12%;
   }
-  input, 
+
+  input,
   textarea {
     max-width: 300px;
   }
@@ -451,56 +476,69 @@ button:focus,
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .navigation-list {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
   }
+
   .profile {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
+
   .about-me__text {
     padding: 0 1.5em;
   }
+
   button,
   .button {
     padding: 10px 15px;
   }
+
   .grid__item-description p {
     font-size: 12px;
   }
+
   .grid__item-links {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
   }
+
   .grid__item-links:last-child {
     margin-right: 10px;
   }
+
   .profile__portrait {
     width: 200px;
     float: none;
     position: relative;
     left: 30%;
   }
-  #first-intro{
+
+  #first-intro {
     display: block;
     font-size: 18px;
     padding: 0 1.5em;
   }
+
   .profile h1 {
     text-align: center;
   }
-  .profile .button{
+
+  .profile .button {
     display: block;
     margin-left: 25%;
   }
-  input, 
+
+  input,
   textarea {
     max-width: 450px;
   }
+
   /* p {
     font-size: 12px;
   }
@@ -521,30 +559,55 @@ button:focus,
     grid-row: auto / auto;
   }
 
-  h1 {
-    font-size: 20px;
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
   }
-  h2, .grid__item-title {
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-me__text {
+    padding: 0 1.5em;
+  }
+
+  button,
+  .button {
+    padding: 10px 15px;
+  }
+
+  .grid__item-description p {
+    font-size: 12px;
+  }
+
+  .profile__portrait {
+    width: 250px;
+    float: none;
+    position: relative;
+    left: 32%;
+  }
+
+  #first-intro {
+    display: block;
     font-size: 18px;
+    padding: 0 2em;
+  }
+
+  .profile h1 {
+    text-align: center;
+  }
+
+  .profile .button {
+    display: block;
+    margin-left: 30%;
+  }
+
+  input,
+  textarea {
+    max-width: 500px;
   }
 }
-
-/* @keyframes cloud-move {
-  from {
-    transform: translate(400px, 50px);
-  }
-
-  to {
-    transform: translate(10px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(0, 40px);
-  }
-
-  to {
-    transform: translate(300px, 40px);
-  }
-} */
