@@ -451,12 +451,63 @@ button:focus,
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-  p {
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-me__text {
+    padding: 0 1.5em;
+  }
+  button,
+  .button {
+    padding: 10px 15px;
+  }
+  .grid__item-description p {
+    font-size: 12px;
+  }
+  .grid__item-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .grid__item-links:last-child {
+    margin-right: 10px;
+  }
+  .profile__portrait {
+    width: 200px;
+    float: none;
+    position: relative;
+    left: 30%;
+  }
+  #first-intro{
+    display: block;
+    font-size: 18px;
+    padding: 0 1.5em;
+  }
+  .profile h1 {
+    text-align: center;
+  }
+  .profile .button{
+    display: block;
+    margin-left: 25%;
+  }
+  input, 
+  textarea {
+    max-width: 450px;
+  }
+  /* p {
     font-size: 12px;
   }
   .about-me__text {
     padding: 0 1em;
-  }
+  } */
+
 
 }
 
