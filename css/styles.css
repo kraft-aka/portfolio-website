@@ -300,7 +300,7 @@ button:focus,
 }
 
 .grid {
-  padding: 0 50px;
+  padding: 0 5em;
 }
 
 /* start grid fallback */
@@ -403,12 +403,40 @@ button:focus,
   .grid {
     grid-template-columns: 1fr;
   }
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me__text {
+    padding: 0 1.5em;
+  }
+  button,
+  .button {
+    padding: 10px 15px;
+  }
+  .grid__item-description p {
+    font-size: 12px;
+  }
+  .profile__portrait {
+    width: 200px;
+  }
+  #first-intro{
+    display: block;
+    font-size: 16px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+  p {
+    font-size: 12px;
+  }
+  .about-me__text {
+    padding: 0 1em;
+  }
+
 }
 
 @media all and (max-width: 750px) {
@@ -423,6 +451,9 @@ button:focus,
 
   h1 {
     font-size: 20px;
+  }
+  h2, .grid__item-title {
+    font-size: 18px;
   }
 }
 
