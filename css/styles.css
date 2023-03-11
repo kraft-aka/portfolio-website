@@ -406,6 +406,12 @@ button:focus,
   .navigation-list {
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .about-me__text {
     padding: 0 1.5em;
@@ -419,10 +425,25 @@ button:focus,
   }
   .profile__portrait {
     width: 200px;
+    float: none;
+    position: relative;
+    left: 20%;
   }
   #first-intro{
     display: block;
     font-size: 16px;
+    padding: 0 1em;
+  }
+  .profile h1 {
+    text-align: center;
+  }
+  .profile .button{
+    display: block;
+    margin-left: 12%;
+  }
+  input, 
+  textarea {
+    max-width: 300px;
   }
 }
 
