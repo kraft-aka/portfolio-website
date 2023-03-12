@@ -444,6 +444,67 @@ button:focus,
   animation: 23s cloud-move-reverse infinite alternate linear;
 } */
 
+/* Media queries */
+
+@media all and (max-width: 360px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-me__text {
+    padding: 0 1.5em;
+  }
+
+  button,
+  .button {
+    padding: 10px 15px;
+  }
+
+  .grid__item-description p {
+    font-size: 12px;
+  }
+
+  .profile__portrait {
+    width: 180px;
+    float: none;
+    position: relative;
+    left: 15% !important;
+  }
+
+  #first-intro {
+    display: block;
+    font-size: 16px;
+    padding: 0 1.2em;
+  }
+
+  .profile h1 {
+    text-align: center;
+  }
+
+  .profile .button {
+    display: block;
+    margin-left: 12% !important; 
+  }
+
+  input,
+  textarea {
+    max-width: 300px;
+  }
+}
+
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
@@ -484,7 +545,7 @@ button:focus,
   #first-intro {
     display: block;
     font-size: 16px;
-    padding: 0 1em;
+    padding: 0 1.2em;
   }
 
   .profile h1 {
@@ -493,7 +554,7 @@ button:focus,
 
   .profile .button {
     display: block;
-    margin-left: 12%;
+    margin-left: 10px;
   }
 
   input,
@@ -546,7 +607,12 @@ button:focus,
     width: 200px;
     float: none;
     position: relative;
-    left: 30%;
+    left: 10%;
+  }
+
+  .btn-container {
+    max-width: 200px;
+    max-height: 100px;
   }
 
   #first-intro {
