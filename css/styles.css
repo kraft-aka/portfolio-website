@@ -116,39 +116,7 @@ select,
   font-family: inherit;
 }
 
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  background-color: var(--primary-color);
-  /* styles the background color */
-  color: var(--color-white);
-  /* font color */
-  text-decoration: none;
-  /* text decoration(unerline, etc.) of the button */
-  padding: 15px 20px;
-  /* adds spacing to the button */
-  border-radius: 5px;
-  margin-left: 10px;
 
-  /* border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom */
-
-  transition: all 0.5s;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus,
-#submit-button:hover,
-#submit-button:focus {
-  cursor: pointer;
-  /* lets the mouse appear as a hand when hovering over the button */
-  opacity: 0.8;
-  /* reduces the opacity of the button to 80% */
-}
 
 .navigation-list__item--active {
   text-decoration: none;
@@ -270,6 +238,7 @@ button:focus,
   outline: 0;
 }
 
+/* Buttons */
 #submit-button {
   margin-top: 15px;
   border: none;
@@ -286,6 +255,49 @@ button:focus,
   /* adds spacing to the button */
   border-radius: 5px;
   transition: all 0.5s;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  background-color: var(--primary-color);
+  /* styles the background color */
+  color: var(--color-white);
+  /* font color */
+  text-decoration: none;
+  /* text decoration(unerline, etc.) of the button */
+  padding: 15px 20px;
+  /* adds spacing to the button */
+  border-radius: 5px;
+  margin-left: 10px;
+
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.3);   /* gives the button a bottom */
+
+  transition: all 0.5s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+#submit-button:hover,
+#submit-button:focus {
+  cursor: pointer;
+  /* lets the mouse appear as a hand when hovering over the button */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80% */
+}
+
+#dark {
+  background-color: #292c35;
+}
+
+#light {
+  background-color: #e9f1f7;
+  color: #292c35;
 }
 
 #first-intro {
@@ -311,6 +323,24 @@ button:focus,
 
 #button-cv {
   padding: 5px;
+}
+
+/* Dark mode */
+.dark {
+  background-color: #292c35;
+  color: #fff;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark #dark {
+  border: 1px solid #fff;
+}
+
+.btn-container {
+  margin-left: 10px;
 }
 
 .grid {

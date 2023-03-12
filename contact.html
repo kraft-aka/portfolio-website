@@ -1,155 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link
-      rel="icon"
-      type="image/png"
-      href="./img/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="This is a Portfolio of a Web Developer
+
+<head>
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a Portfolio of a Web Developer
     Kubat Aiupov. It displays the projects and essential skills on the filed of
-    Web Development."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kubat Aiupov - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <!-- Here a logo should be added-->
-      <a href="index.html"><img
-        class="logo-kubat"
-        src="assets/icon.png"
-        alt="Personal logo of Kubat Aiupov, a text logo in uppercase letters that consists of my name."
-      /></a> 
+    Web Development." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kubat Aiupov - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-      <nav class="main-navigation page-header__item">
-        <!-- Navigation bar -->
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
-              >HOME</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >ABOUT</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >WORK</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="page-header">
+    <!-- Here a logo should be added-->
+    <a href="index.html"><img class="logo-kubat" src="assets/icon.png"
+        alt="Personal logo of Kubat Aiupov, a text logo in uppercase letters that consists of my name." /></a>
 
-    <div class="container">
-      <h1>Contact Me</h1>
-      <div id="my-address">
-        <!-- Contact address -->
-        Kubat Aiupov<br />
-        Krimmerstr. 10<br />
-        63067 Offenbach am Main<br />
-        Deutschland<br />
-      </div>
+    <nav class="main-navigation page-header__item">
+      <!-- Navigation bar -->
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Dark and Light modes -->
+  <div class="btn-container">
+    <button class="mode-dark button" id="dark">Dark</button>
+    <button class="mode-ligth button" id="light">Light</button>
+  </div>
 
-      <div id="my-contacts">
-        <!-- My mobile phone number -->
-        <!-- <a href="tel:+4915164066720">Tel: +49 1516 4066720</a><br /> -->
-        <!-- My Skype address -->
-        <a href="skype:kubat.aiupov">Skype: kubat.aiupov</a><br />
-        <!-- My Email address -->
-        <!-- <a href="mailto:kubat.aiupov@gmail.com">Email: kubat.aiupov@gmail.com</a
+  <div class="container">
+    <h1>Contact Me</h1>
+    <div id="my-address">
+      <!-- Contact address -->
+      Kubat Aiupov<br />
+      Krimmerstr. 10<br />
+      63067 Offenbach am Main<br />
+      Deutschland<br />
+    </div>
+
+    <div id="my-contacts">
+      <!-- My mobile phone number -->
+      <!-- <a href="tel:+4915164066720">Tel: +49 1516 4066720</a><br /> -->
+      <!-- My Skype address -->
+      <a href="skype:kubat.aiupov">Skype: kubat.aiupov</a><br />
+      <!-- My Email address -->
+      <!-- <a href="mailto:kubat.aiupov@gmail.com">Email: kubat.aiupov@gmail.com</a
         ><br /> -->
-      </div>
+    </div>
 
-      <div id="contact-me">
-        <!-- Call-to-action link to mail me -->
-        <a href="mailto:kubat.aiupov@gmail.com"
-          ><button type="button" name="button" class="button">
-            Contact me
-          </button></a
-        >
-      </div>
+    <div id="contact-me">
+      <!-- Call-to-action link to mail me -->
+      <a href="mailto:kubat.aiupov@gmail.com"><button type="button" name="button" class="button">
+          Contact me
+        </button></a>
+    </div>
 
-      <div class="leave-message">
-        <form method="post" id="contact-form">
-          <!-- <label class="standart-label" for="contact-name">Name </label> -->
-          <input type="text" id="contact-name" required placeholder="Name" />
-          <br />
-          <!-- <label class="standart-label" for="contact-email">E-Mail:</label> -->
-          <input
-            type="email"
-            id="contact-email"
-            required
-            placeholder="E-Mail"
-          />
-          <br />
+    <div class="leave-message">
+      <form method="post" id="contact-form">
+        <!-- <label class="standart-label" for="contact-name">Name </label> -->
+        <input type="text" id="contact-name" required placeholder="Name" />
+        <br />
+        <!-- <label class="standart-label" for="contact-email">E-Mail:</label> -->
+        <input type="email" id="contact-email" required placeholder="E-Mail" />
+        <br />
 
-          <!-- THE REGEX PATTERN TO VALIDATE TELEFON
+        <!-- THE REGEX PATTERN TO VALIDATE TELEFON
             NUMBER. USE CAREFULLY IF I WANT TO ACCEPT SOME NUMBERS FROM
             MULTIPLE COUNTRIES.
             <input type = "tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" -->
 
-          <!-- <label class="standart-label" for="contact-message">Message: </label> -->
-          <textarea
-            maxlength="240"
-            id="contact-message"
-            required
-            placeholder="Your message"
-          ></textarea>
-          <br />
+        <!-- <label class="standart-label" for="contact-message">Message: </label> -->
+        <textarea maxlength="240" id="contact-message" required placeholder="Your message"></textarea>
+        <br />
 
-          <input type="submit" value="Send message" id="submit-button" />
-        </form>
-      </div>
+        <input type="submit" value="Send message" id="submit-button" />
+      </form>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div id="find-me">
+      <h3>Find me</h3>
     </div>
 
-    <footer class="page-footer">
-      <div id="find-me">
-        <h3>Find me</h3>
-      </div>
+    <div class="social-media">
+      <!-- Github logo -->
+      <a href="https://github.com/kraft-aka?tab=repositories"><img src="assets/github.svg" alt="Github icon" /></a>
+      <!-- Twitter logo -->
+      <a href="https://twitter.com/home"><img src="assets/twitter.svg" alt="Twitter icon" /></a>
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/kubat-aiupov-685645163/"><img src="assets/linkedin-circled.svg"
+          alt="LinkedIn icon" /></a>
+    </div>
+  </footer>
 
-      <div class="social-media">
-        <!-- Github logo -->
-        <a href="https://github.com/kraft-aka?tab=repositories"
-          ><img src="assets/github.svg" alt="Github icon"
-        /></a>
-        <!-- Twitter logo -->
-        <a href="https://twitter.com/home"
-          ><img src="assets/twitter.svg" alt="Twitter icon"
-        /></a>
-        <!-- LinkedIn logo -->
-        <a href="https://www.linkedin.com/in/kubat-aiupov-685645163/"
-          ><img src="assets/linkedin-circled.svg" alt="LinkedIn icon"
-        /></a>
-      </div>
-    </footer>
+  <script src="js/index.js"></script>
+</body>
 
-    <script src="js/tota11y.min.js"></script>
-  </body>
 </html>
