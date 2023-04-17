@@ -325,6 +325,11 @@ button:focus,
   padding: 5px;
 }
 
+/* Light mode */
+.light {
+  background-color: var(--primary-color-light);
+}
+
 /* Dark mode */
 .dark {
   background-color: #292c35;
