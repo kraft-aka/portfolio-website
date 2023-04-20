@@ -568,6 +568,72 @@ button:focus,
   }
 }
 
+@media all and (max-width: 375px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-me__text {
+    padding: 0 1em;
+  }
+
+  button,
+  .button {
+    padding: 10px 15px;
+  }
+
+  .grid__item-description p {
+    font-size: 12px;
+  }
+
+  .profile__portrait {
+    width: 150px;
+    float: none;
+    position: relative;
+    left: 25%;
+    margin: 0 -15%;
+  }
+
+  #photo-kubat-aiupov {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  #first-intro {
+    display: block;
+    font-size: 16px;
+    padding: 0 1.2em;
+  }
+
+  .profile h1 {
+    text-align: center;
+  }
+
+  .profile .button {
+    display: block;
+    position: absolute;
+    left: -15%;
+  }
+
+  input,
+  textarea {
+    max-width: 300px;
+  }
+}
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
