@@ -568,7 +568,7 @@ button:focus,
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (min-width: 375px) and (max-width: 414px) {
   .grid {
     grid-template-columns: 1fr;
   }
